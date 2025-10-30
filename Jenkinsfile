@@ -10,7 +10,7 @@ pipeline{
 			stage('Install Dependencies'){
 				steps{
 					echo 'Installing depencies'
-					bat 'mvn clean install'
+					bat 'mvn clean install -DskipTests'
 				}
 			}
 			stage('Build and Testing'){

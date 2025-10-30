@@ -4,7 +4,7 @@ pipeline{
 			stage('Checkout Source'){
 				steps{
 					echo 'Checking for Git repo source code'
-					git branch:'main',url:''
+					git branch:'main',url:'https://github.com/SaiVarshitha123-marojuvarsh/jenkins-master-slave.git'
 				}
 			}
 			stage('Install Dependencies'){
@@ -35,3 +35,5 @@ pipeline{
 			}
 		}
 }
+				
+
